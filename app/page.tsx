@@ -1,6 +1,6 @@
 import { headers } from 'next/headers';
 import {
-  GraduationCap, Newspaper, Train, Calculator, Brain, Smile,
+  GraduationCap, Train, Calculator, Brain, Smile,
   Gamepad2, MessageSquare, ScanFace, Sparkles, ArrowUpRight, Globe,
 } from 'lucide-react';
 
@@ -23,14 +23,12 @@ const KR_SERVICES: Service[] = [
   { name: '이모지 모음', url: 'https://emoji.mycorepick.com', desc: '예쁜 이모지·특수문자 복사', Icon: Smile },
   { name: '코어 게임', url: 'https://game.mycorepick.com', desc: '설치 없이 즐기는 캐주얼 웹게임', Icon: Gamepad2 },
   { name: '랜덤 채팅', url: 'https://chat.mycorepick.com', desc: '새로운 사람과 바로 연결', Icon: MessageSquare },
-  { name: '코어픽 매거진', url: 'https://mycorepick.com', desc: '세상을 읽는 독립 에디토리얼', Icon: Newspaper },
 ];
 
 // Visitors from outside Korea — Korea-related & universal services, in English.
 const GLOBAL_SERVICES: Service[] = [
   { name: 'Learn Korean', url: 'https://korean.mycorepick.com', desc: 'Free, step-by-step Korean lessons & quizzes — from hangul to fluency.', Icon: GraduationCap, feature: true },
-  { name: 'CorePick Magazine', url: 'https://mycorepick.com', desc: 'Independent, human-written analysis on tech, money, health & culture.', Icon: Newspaper, feature: true },
-  { name: 'AI Face Reading', url: 'https://photoai.mycorepick.com', desc: 'Discover what an AI sees in your face — the Korean art of gwansang.', Icon: ScanFace },
+  { name: 'AI Face Reading', url: 'https://photoai.mycorepick.com', desc: 'Discover what an AI sees in your face — the Korean art of gwansang.', Icon: ScanFace, feature: true },
   { name: 'Korea Subway', url: 'https://subway.mycorepick.com', desc: 'Real-time train locations across Korea — handy for travelers.', Icon: Train },
   { name: 'Everyday Calculator', url: 'https://calc.mycorepick.com', desc: 'Every calculation you need, in one fast place.', Icon: Calculator },
   { name: 'MBTI Test', url: 'https://mbti.mycorepick.com', desc: 'A refined personality assessment.', Icon: Brain },
